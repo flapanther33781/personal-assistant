@@ -1,5 +1,4 @@
-from datetime import date
-import calendar
+from datetime import datetime
 import csv
 import datetime
 
@@ -11,16 +10,10 @@ with open("data.csv", "r") as f:
     for line in reader:
         data.append(line)
 
-now = datetime.datetime.now()
-current_numerical_year = now.year
-current_numerical_month = now.month
-current_numerical_day = now.day
+currDate = datetime.now().strftime("%Y-%m-%d")
+currDay = datetime.now().strftime("%A")
 
-current_date = date.today()
-current_weekday = calendar.day_name[current_date.weekday()]
-
-
-with open(str(current_numerical_year)+"-"+str(current_numerical_month)+"-"+str(current_numerical_day)+".csv", "a") as f:
+with open(f"{currDate}.csv", "a") as f:
     writer = csv.DictWriter(f, fieldnames=["Number", "Period", "Due Date", "Time", "Task"])
     for line in data:
         print(line)
