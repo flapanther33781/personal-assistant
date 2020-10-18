@@ -1,7 +1,10 @@
 ##################################################
 # Built in library/module/package of Python
 # https://docs.python.org/3/library/csv.html
+from datetime import date
+import calendar
 import csv
+import datetime
 
 # Set a variable = to an empty list
 data = []
@@ -26,9 +29,6 @@ for line in data:
     print(line['Number'],line['Task'])
 
 ##################################################
-import datetime
-import calendar
-from datetime import date
 
 now = datetime.datetime.now()
 current_numerical_year = now.year
