@@ -7,7 +7,7 @@ import csv
 data = []
 
 # Open dat file that contains your sample data, using "r" for read.
-with open("/home/ubadmin/Documents/am_test/data.csv", "r") as f:
+with open("/home/ubadmin/Documents/personal-assistant/data.csv", "r") as f:
     # load csv.DictReader, this will set your column names to a dictionary such
     # as {"Task": "Walk to the store and back"}
     # we are using the delimiter of comma.
