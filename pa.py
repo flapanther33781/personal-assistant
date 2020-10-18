@@ -24,6 +24,6 @@ with open(str(current_numerical_year)+"-"+str(current_numerical_month)+"-"+str(c
     writer = csv.DictWriter(f, fieldnames=["Number", "Period", "Due Date", "Time", "Task"])
     for line in data:
         print(line)
-        writer.writerow({'Number': number, 'Period': period, 'Due Date': due_date, 'Time': due_time, 'Task': task})
+        writer.writerow({'Number': line['Number'], 'Period': line['Period'], 'Due Date': line['Due Date'], 'Time': line['Time'], 'Task': line['Task']})
         f.write("\n")
 
