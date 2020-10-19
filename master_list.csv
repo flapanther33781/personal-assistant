@@ -1,0 +1,9 @@
+Number,Period,Due Date,Time,Important,Urgent,Priority,Task
+1,DAILY,DAILY,ANY,1,1,,Walk to the store.
+2,WEEKLY,Sunday,ANY,1,3,,Plan schedule for next week.
+3,MONTHLY,xxxx-xx-03,1800,1,1,,Call my son
+4,MONTHLY,xxxx-xx-18,1800,1,2,,Call my mom
+5,YEARLY,xxxx-10-18,ANY,5,1,,Buy my mom a Halloween card.
+6,YEARLY,xxxx-12-01,ANY,5,1,,Buy my mom a Christmas card.
+7,ONCE,2020-01-10,ANY,2,1,,Go food shopping.
+8,ONCE,2020-10-18,ANY,3,1,,Test Task

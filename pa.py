@@ -2,69 +2,58 @@
 # Built in library/module/package of Python
 # https://docs.python.org/3/library/csv.html
 import csv
+import calendar
+import datetime
+from datetime import date
 
-# Set a variable = to an empty list
+##################################################
+now = datetime.datetime.now()
+current_date = date.today()
+current_weekday = calendar.day_name[current_date.weekday()]
+##################################################
+
+# Set variables to empty lists
 data = []
+new_data = []
 
 # Open dat file that contains your sample data, using "r" for read.
-with open("/home/ubadmin/Documents/personal-assistant/data.csv", "r") as f:
+with open("/home/ubadmin/Documents/personal-assistant/master_list.csv", "r") as f:
     # load csv.DictReader, this will set your column names to a dictionary such
     # as {"Task": "Walk to the store and back"}
-    # we are using the delimiter of comma.
     reader = csv.DictReader(f, delimiter=",")
 
-    # using a for loop we append each line to our empty list to read later
+    # append each line to a list to read later
     for line in reader:
         data.append(line)
 
 # Now we can loop through data
 for line in data:
-    # dictionaries can be accessed with the variable name in the for loop. In
-    # this case "line", followed by brackets and quoted header name.
-    # line['Task'] will print your task in each row.
-    # the below here prints your Number, followed by the Task.
-    print(line['Number'],line['Task'])
+    line['Priority'] = (int(line['Important'])*10)+int(line['Urgent'])
 
-##################################################
-import datetime
-import calendar
-from datetime import date
+    if line['Period'] == "DAILY":
+        new_data.append(line)
 
-now = datetime.datetime.now()
-current_numerical_year = now.year
-current_numerical_month = now.month
-current_numerical_day = now.day
+    if line['Period'] == "WEEKLY" and line['Due Date'] == current_weekday:
+        new_data.append(line)
 
-current_date = date.today()
-current_weekday = calendar.day_name[current_date.weekday()]
+    if line['Period'] == "MONTHLY" and line['Due Date'] == "xxxx-xx-"+str(now.day):
+        new_data.append(line)
 
-##################################################
-# we set 5 variables, this way when you split your data up by commas, it assigned 
-# them correctly. we use split(",") to split on comma
-#number, period, due_date, due_time, task = input("New Task (split data by commas\nNumber, Period, Due Date, Time, Task:\n").split(",")
+    if line['Period'] == "YEARLY" and line['Due Date'] == "xxxx-"+str(now.month)+"-"+str(now.day):
+        new_data.append(line)
 
-##################################################
-# this time lets use "a" for append, as this will create a new file, and/or
-# append new data
-#with open("data.csv", "a") as f:
-#    # we will now call DictReader, and assign field names, equal to our csv file.
-#    writer = csv.DictWriter(f, fieldnames=["Number", "Period", "Due Date", "Time", "Task"])
-#    # now we write our user input into the file using dictionary 
-#    # combining our headers and our variable {"header" : variable}
-#    writer.writerow({'Number': number, 'Period': period, 'Due Date': due_date, 'Time': due_time, 'Task': task})
-#    # now cause I am drawing a blank we will call our file f, and write a new
-#    # line after each row using "\n"
-#    f.write("\n")
+    if line['Due Date'] == str(now.year)+"-"+str(now.month)+"-"+str(now.day):
+        new_data.append(line)
 
-with open(str(current_numerical_year)+"-"+str(current_numerical_month)+"-"+str(current_numerical_day)+".csv", "a") as f:
+with open(str(now.year)+"-"+str(now.month)+"-"+str(now.day)+".csv", "a") as f:
     # we will now call DictReader, and assign field names, equal to our csv file.
-    writer = csv.DictWriter(f, fieldnames=["Number", "Period", "Due Date", "Time", "Task"])
-    # now we write our user input into the file using dictionary 
-    # combining our headers and our variable {"header" : variable}
-    for line in data:
-        print(line)
-        writer.writerow({'Number': number, 'Period': period, 'Due Date': due_date, 'Time': due_time, 'Task': task})
-        # now cause I am drawing a blank we will call our file f, and write a new
-        # line after each row using "\n"
-        f.write("\n")
+    writer = csv.DictWriter(f, fieldnames=["Number", "Period", "Due Date", "Time", "Important", "Urgent", "Priority", "Task"])
+    # Write the header column
+    writer.writerow({'Number': 'Number', 'Period': 'Period', 'Due Date': 'Due Date', 'Time': 'Time', 'Important': 'Important', 'Urgent': 'Urgent', 'Priority': 'Priority', 'Task': 'Task'})
+
+    # Write new_data into the file
+    for x in range (0, 100):
+        for line in new_data:
+            if line['Priority'] == x:
+                writer.writerow({'Number': line['Number'], 'Period': line['Period'], 'Due Date': line['Due Date'], 'Time': line['Time'], 'Important': line['Important'], 'Urgent': line['Urgent'], 'Priority': line['Priority'], 'Task': line['Task']})
 
