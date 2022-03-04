@@ -1,0 +1,58 @@
+Number,Period,Due Date,Time,Important,Urgent,Priority,Category,Dependency,Stretch,Task
+17,DAILY,DAILY,,0,1,1,Personal,,,Walk to the store
+7,MONTHLY,xx/01/xxxx,,1,1,11,Personal,,7,Call my son
+12,WEEKLY,Tuesday,,2,1,21,CoDA,,,Attend a CoDA meeting
+36,ONCE,2/1/2021,,2,4,24,Personal,,,get spare keys made
+41,ONCE,2/1/2021,,2,4,24,Personal,,,Ask doctor about sleep study
+401,ONCE,2/1/2021,,3,3,33,CoDA,,,plan recording an introduction to the recovery toolbox 
+23,ONCE,2/1/2021,,3,3,33,Personal,,,Check with Erin about expense report
+31,ONCE,2/1/2021,,3,3,33,Personal,,,"Ask HR about help setting up trust funds for Andrew, Finn, and Nathan"
+40,ONCE,2/1/2021,,3,4,34,Personal,,,Fix-a-flat & lighter
+24,ONCE,2/1/2021,,3,6,36,Personal,,,Set up call with H&R Block about taxes
+28,ONCE,2/1/2021,,4,2,42,Personal,,,"Craigslist: monitor, upholstery foam, Adirondack chair, rice cooker, picture frame"
+211,ONCE,2/1/2021,,4,3,43,HMUH,,,Get stickers
+25,ONCE,2/1/2021,,4,4,44,Personal,,,"Goodwill: monitor, upholstery foam, Adirondack chair, rice cooker, picture frame"
+26,ONCE,2/1/2021,,4,4,44,Personal,,,"Uninstall Office 2007, add 2010 to ne wPC"
+34,ONCE,2/1/2021,,4,4,44,Personal,,,Start studying for CCNP Service Provider
+38,ONCE,2/1/2021,,4,4,44,Personal,,,Look for Linux Keepass replacement
+39,ONCE,2/1/2021,,4,4,44,Personal,,,"Synology threads: Ubuntu access, and access to get NAS up after going to sleep"
+209,ONCE,2/1/2021,,4,6,46,HMUH,,,Have episodes transcribed
+210,ONCE,2/1/2021,,4,6,46,HMUH,,,HMUH business cards w/QR code on back
+27,ONCE,2/1/2021,,4,6,46,Personal,,,buy a laserjet printer
+30,ONCE,2/1/2021,,4,8,48,Personal,,,Buy monitors
+2,YEARLY,02/01/xxxx,,5,1,51,Personal,,14,Mail Katie & Nathan b-day cards
+207,ONCE,2/1/2021,,5,3,53,HMUH,,,Audry - look at horror and psychology podcasts
+13,WEEKLY,Thursday,,5,3,53,Personal,,3,F drive & Z drive cleanup
+11,WEEKLY,Tuesday,,5,6,56,Personal,,3,Read a chapter of Running on Empty
+507,ONCE,2/1/2021,,6,3,63,Music,,,Contact the sound engineer for Good Morning Aztlan
+508,ONCE,2/1/2021,,6,3,63,Music,,,Post English phrase list scraping request on Fiverr
+512,ONCE,2/1/2021,,6,3,63,Music,,,Music idea: Pedal point from 5:00 in https://www.youtube.com/watch?v=lz3WR-F_pnM
+513,ONCE,2/1/2021,,6,3,63,Music,,,Music idea: Minor 9ths or 11ths: https://www.youtube.com/watch?v=yQx2O-pF8ng
+514,ONCE,2/1/2021,,6,3,63,Music,,,Check out Santeria - ska guitars but the snare is on the down beat???
+307,ONCE,2/1/2021,,6,6,66,Family,,,hire someone to research our family in Poland
+9,MONTHLY,xx/03/xxxx,,6,6,66,Personal,,7,Sharpen knives
+600,ONCE,2/1/2021,,7,3,73,Entertainment,,,Watch Ant-Man (2015)
+216,ONCE,2/1/2021,,8,5,85,HMUH,,,Work on Skype recording option
+700,ONCE,2/1/2021,,9,3,93,Back Burner,,,Build up a Home Maintenance Guide
+701,ONCE,2/1/2021,,9,3,93,Back Burner,,,design a contraption to help me sleep better by putting a padded shovel-shaped thing on the peak of my skull
+19,DAILY,DAILY,,0,1,1,Personal,39,,temp task that should only show up later
+104,ONCE,2/1/2021,,2,2,22,Home,101,,Clean mold off china cabinet - use water & bleach
+108,ONCE,2/1/2021,,2,2,22,Home,101,,"Clean up wall where old pipe was: take out bolts, fill in holes"
+106,ONCE,2/1/2021,,2,3,23,Home,105,,Buy 3 wall protectors - need to wait until baseboards are put in.
+103,ONCE,2/1/2021,,3,3,33,Home,101,,"Get 3 floor quotes (asbestos, addition floor level, back porch)"
+105,ONCE,2/1/2021,,3,3,33,Home,104,,Have Jason put the baseboards back on
+37,ONCE,2/1/2021,,4,4,44,Personal,36,,Send AJ PO box key
+212,ONCE,2/1/2021,,4,6,46,HMUH,200,,horror challenge - a movie where you invest in the characters and none of them die
+213,ONCE,2/1/2021,,4,6,46,HMUH,200,,Read about QR Code advertising ideas
+214,ONCE,2/1/2021,,4,6,46,HMUH,200,,"Consider using iTunes podcast player. Host our own episodes, need an RSS feed + know how to push title, summary, etc."
+402,WEEKLY,Wednesday,,4,6,46,CoDA,401,2,record myself reading RTB
+102,ONCE,2/1/2021,,6,3,63,Home,101,,Check out home remodeling supply store near tri-city screw
+509,ONCE,2/1/2021,,6,3,63,Music,507,,Add English phrase list to rhyming dictionary
+510,ONCE,2/1/2021,,6,3,63,Music,508,,Test English phrase & rhyming dictionary for song lyrics
+511,ONCE,2/1/2021,,6,3,63,Music,509,,Scrape lyrics websites & add lines to my rhyming dictionary
+215,ONCE,2/1/2021,,6,5,65,HMUH,200,,horror challenge - a movie where you invest in the characters and none of them die
+309,ONCE,2/1/2021,,7,2,72,Family,308,,Purchase an AWS compute instance (~$10/mo)
+601,ONCE,2/1/2021,,7,3,73,Entertainment,600,,Watch Spiderman: Far From Home (2019)
+602,ONCE,2/1/2021,,7,3,73,Entertainment,601,,Fall of Civilizations: https://www.youtube.com/c/FallofCivilizationsPodcast/videos
+310,ONCE,2/1/2021,,7,4,74,Family,309,,Hire someone to set up a wiki on my compute instance & start filling out bio pages.
+308,ONCE,2/1/2021,,7,6,76,Family,307,,Register biedrzycki.org
